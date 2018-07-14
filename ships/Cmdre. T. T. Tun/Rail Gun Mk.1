@@ -1,0 +1,97 @@
+return model =
+  name: 'Rail Gun Mk.1'
+  level: 5
+  model: 1
+  size: 1.8
+  specs:
+    shield:
+      capacity: [200,300]
+      reload: [4,6]
+    generator:
+      capacity: [80,160]
+      reload: [40,60]
+    ship:
+      mass: 200
+      speed: [70,90]
+      rotation: [50,70]
+      acceleration: [60,110]
+  bodies:
+    main:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 10
+        z: -10
+      position:
+        x: [0,0,0,0,0,0]
+        y: [0,-10,40,100,90,100]
+        z: [0,0,0,0,0,0]
+      width: [0,10,23,20,10]
+      height: [0,5,23,20,0]
+      texture: [12,1,10,12]
+      propeller: true
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -20
+        z: -5
+      position:
+        x: [0,0,0,0,0]
+        y: [0,40,80,120]
+        z: [-4,0,4,0]
+      width: [20,25,20,15]
+      height: [20,28,20,20]
+      texture: [9]
+    uwings:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -20
+        z: -10
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-240,-250,40,80,90,100]
+        z: [0,0,0,0,0,0]
+      width: [0,15,25,25,20,0]
+      height: [0,15,25,25,20,0]
+      texture: [12,2,3,4]
+      laser:
+        damage: [500,500]
+        rate: 0.3333333333333333333333333333333333334
+        type: 2
+        speed: [500,500]
+        recoil: 250
+        number: 1
+        error: 0
+      propeller: false
+      texture: [4,63,10,4,63,4]
+    cannons:
+      section_segments: 12
+      offset:
+        x: 30
+        y: 20
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-60,-70,-20,0,20,50,45]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,16,20,25,15,0]
+      height: [0,10,15,20,20,15,0]
+      angle: 0
+      propeller: true
+      texture: [63,4,63,4,63,4,63]
+    side_propulsors:
+      section_segments: 10
+      offset:
+        x: 45
+        y: 20
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [0,10,13,25,30,40,60,50]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,5,10,10,10,5,5,10,15,0]
+      height: [0,5,10,10,10,5,5,10,15,0]
+      propeller: true
+      texture: [5,2,11,2,63,11,12]
